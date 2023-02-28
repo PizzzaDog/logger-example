@@ -14,6 +14,11 @@ public class LogController {
     @Autowired
     WriterService writerService;
 
+    @GetMapping
+    public String homePage() {
+        return "dumb";
+    }
+
     @GetMapping("/log")
     public String getPage() {
         return "log";
