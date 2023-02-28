@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+input[type=mystyle] {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+</style>
+</head>
+<body>
+<h1>Type your today log here</h1>
+<form autocomplete="off" action="#" th:action="@{/log}" method="post">
+    <input type="mystyle" th:value="${message}" name="message" />
+    <p><input type="submit" value="Pook pook" /></p>
+</form>
+</body>
+</html>

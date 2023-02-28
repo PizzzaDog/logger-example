@@ -8,6 +8,7 @@ public class HealthCheckController {
 
     @GetMapping("/health")
     public String healthCheck() {
+        System.out.println("some");
         return "I'm alive";
     }
 
